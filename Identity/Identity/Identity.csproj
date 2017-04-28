@@ -219,6 +219,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -246,6 +247,10 @@
     <ProjectReference Include="..\Domain.Model\Domain.Model.csproj">
       <Project>{9D07CB34-0A84-45EF-9C99-F82EAD8935FC}</Project>
       <Name>Domain.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domin.Create\Domain.Create.csproj">
+      <Project>{C786D87C-1AD1-4F4D-98A2-E8D40A55590E}</Project>
+      <Name>Domain.Create</Name>
     </ProjectReference>
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj">
       <Project>{BF5C6B55-DE5B-4C56-B3E4-0D5621268117}</Project>

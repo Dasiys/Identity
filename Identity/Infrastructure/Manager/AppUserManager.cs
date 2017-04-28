@@ -22,6 +22,20 @@ namespace Infrastructure.Manager
         {
             AppIdentityDbContext db = context.Get<AppIdentityDbContext>();
             AppUserManager manager = new AppUserManager(new UserStore<AppUser>(db));
+            manager.PasswordValidator = new CustomPasswordValidator
+            {
+                RequireDigit = false,
+                RequiredLength = 6,
+                RequireLowercase = false,
+                RequireNonLetterOrDigit = false,
+                RequireUppercase = false
+            };
+
+            manager.UserValidator = new UserValidator<AppUser>(manager)
+            {
+                AllowOnlyAlphanumericUserNames = true,
+                RequireUniqueEmail = true
+            };
             return manager;
         }
     }

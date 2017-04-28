@@ -99,3 +99,6 @@ F:\project\Identity\Identity\Identity\bin\Microsoft.Owin.Security.xml
 F:\project\Identity\Identity\Identity\bin\Microsoft.Owin.Security.Cookies.xml
 F:\project\Identity\Identity\Identity\bin\Microsoft.Owin.Security.OAuth.xml
 F:\project\Identity\Identity\Identity\obj\Debug\Identity.csprojResolveAssemblyReference.cache
+F:\project\Identity\Identity\Identity\bin\Domin.Create.dll
+F:\project\Identity\Identity\Identity\bin\Domin.Create.pdb
+F:\project\Identity\Identity\Identity\bin\Domin.Create.dll.config
