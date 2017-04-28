@@ -10,7 +10,10 @@ namespace Identity.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            Dictionary<string, object> data = new Dictionary<string, object>();
+            data.Add("placeholder", "placeholder");
+
+            return View(data);
         }
 
         public ActionResult About()
