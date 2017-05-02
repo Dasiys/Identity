@@ -27,3 +27,6 @@ F:\project\Identity\Identity\Domin.Create\bin\Debug\Newtonsoft.Json.xml
 F:\project\Identity\Identity\Domin.Create\obj\Debug\Domain.Create.csprojResolveAssemblyReference.cache
 F:\project\Identity\Identity\Domin.Create\obj\Debug\Domin.Create.dll
 F:\project\Identity\Identity\Domin.Create\obj\Debug\Domin.Create.pdb
+F:\project\Identity\Identity\Domin.Create\bin\Debug\Domain.Model.dll
+F:\project\Identity\Identity\Domin.Create\bin\Debug\Domain.Model.pdb
+F:\project\Identity\Identity\Domin.Create\bin\Debug\Domain.Model.dll.config

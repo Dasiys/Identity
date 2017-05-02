@@ -9,6 +9,7 @@ using Microsoft.AspNet.Identity.Owin;
 using System.ComponentModel.DataAnnotations;
 using Domain.Model;
 using System.Threading.Tasks;
+using Domin.Create;
 
 namespace Identity.Controllers
 {
@@ -72,6 +73,47 @@ namespace Identity.Controllers
             {
                 return View("Error", new string[] { "Role Not Found" });
             }
+        }
+
+        public async Task<ActionResult> Edit(string id)
+        {
+            AppRole role = await RoleManager.FindByIdAsync(id);
+            string[] memberIds = role.Users.Select(m => m.UserId).ToArray();
+            IEnumerable<AppUser> members = UserManager.Users.Where(x => memberIds.Any(y => y == x.Id));
+            IEnumerable<AppUser> nonMembers = UserManager.Users.Except(members);
+            return View(new RoleEditModel
+            {
+                Members = members,
+                NonMembers = nonMembers,
+                Role = role
+            });
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> Edit(RoleModificationModel model)
+        {
+            IdentityResult result;
+            if (ModelState.IsValid)
+            {
+                foreach(string userId in model.IdsToAdd??new string[] { })
+                {
+                    result = await UserManager.AddToRolesAsync(userId, model.RoleName);
+                    if (!result.Succeeded)
+                    {
+                        return View("Error", result.Errors);
+                    }
+                }
+                foreach(string userId in model.IdsToDelete??new string[] { })
+                {
+                    result = await UserManager.RemoveFromRolesAsync(userId, model.RoleName);
+                    if (!result.Succeeded)
+                    {
+                        return View("Error", result.Errors);
+                    }
+                }
+                return RedirectToAction("Index");
+            }
+            return View("Errors", new string[] { "Role Not Found" });
         }
 
         private void AddErrorsFromResult(IdentityResult result)
