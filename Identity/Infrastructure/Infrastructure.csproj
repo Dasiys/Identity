@@ -78,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\AppIdentityDbContext.cs" />
+    <Compile Include="Manager\AppRoleManager.cs" />
     <Compile Include="Manager\AppUserManager.cs" />
     <Compile Include="Manager\CustomPasswordValidator.cs" />
     <Compile Include="Migrations\201704280641520_InitialCreate.cs" />
