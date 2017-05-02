@@ -28,6 +28,11 @@ namespace Identity.Controllers
             }
         }
 
+        public ActionResult Create()
+        {
+            return View();
+        }
+
         [HttpPost]
         public async Task<ActionResult> Create([Required]string name)
         {
