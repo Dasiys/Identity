@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Domain.Model;
 
-namespace Domin.Create
+namespace Domain.Create
 {
     public class RoleEditModel
     {

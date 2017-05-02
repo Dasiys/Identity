@@ -9,7 +9,7 @@ using Microsoft.AspNet.Identity.Owin;
 using System.ComponentModel.DataAnnotations;
 using Domain.Model;
 using System.Threading.Tasks;
-using Domin.Create;
+using Domain.Create;
 
 namespace Identity.Controllers
 {
