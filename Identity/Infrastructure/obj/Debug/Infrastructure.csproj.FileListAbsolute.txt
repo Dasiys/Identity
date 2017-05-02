@@ -28,7 +28,7 @@ F:\project\Identity\Identity\Infrastructure\bin\Debug\Microsoft.Owin.Security.Co
 F:\project\Identity\Identity\Infrastructure\bin\Debug\Microsoft.Owin.Security.OAuth.xml
 F:\project\Identity\Identity\Infrastructure\bin\Debug\Newtonsoft.Json.xml
 F:\project\Identity\Identity\Infrastructure\obj\Debug\Infrastructure.csprojResolveAssemblyReference.cache
-F:\project\Identity\Identity\Infrastructure\obj\Debug\Infrastructure.dll
-F:\project\Identity\Identity\Infrastructure\obj\Debug\Infrastructure.pdb
 F:\project\Identity\Identity\Infrastructure\obj\Debug\Infrastructure.Migrations.InitialCreate.resources
 F:\project\Identity\Identity\Infrastructure\obj\Debug\Infrastructure.csproj.GenerateResource.Cache
+F:\project\Identity\Identity\Infrastructure\obj\Debug\Infrastructure.dll
+F:\project\Identity\Identity\Infrastructure\obj\Debug\Infrastructure.pdb

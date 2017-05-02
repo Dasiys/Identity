@@ -5,6 +5,7 @@ using System.Web;
 using Infrastructure.Database;
 using Infrastructure.Manager;
 using Microsoft.AspNet.Identity;
+using Microsoft.Owin;
 using Owin;
 
 namespace Identity.App_Start
@@ -18,7 +19,7 @@ namespace Identity.App_Start
             app.UseCookieAuthentication(new Microsoft.Owin.Security.Cookies.CookieAuthenticationOptions
             {
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
-                LoginPath = new Microsoft.Owin.PathString("/Account/Login")
+                LoginPath = new PathString("/Account/Login")
             });
 
         }
