@@ -44,7 +44,8 @@ namespace Infrastructure.Migrations
             }
             foreach (AppUser dbUser in userManager.Users)
             {
-                dbUser.city = Cities.PARIS;
+                dbUser.City = Cities.PARIS;
+                dbUser.Country = Countries.FRANCE;
             }
             context.SaveChanges();
         }

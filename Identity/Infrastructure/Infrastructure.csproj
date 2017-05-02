@@ -95,6 +95,10 @@
     <Compile Include="Migrations\201705020730278_CityProperty.Designer.cs">
       <DependentUpon>201705020730278_CityProperty.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705020739369_CountryProperty.cs" />
+    <Compile Include="Migrations\201705020739369_CountryProperty.Designer.cs">
+      <DependentUpon>201705020739369_CountryProperty.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -114,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705020730278_CityProperty.resx">
       <DependentUpon>201705020730278_CityProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705020739369_CountryProperty.resx">
+      <DependentUpon>201705020739369_CountryProperty.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

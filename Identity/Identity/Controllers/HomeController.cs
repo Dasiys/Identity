@@ -64,7 +64,8 @@ namespace Identity.Controllers
         public async Task<ActionResult> UserProps(Cities city)
         {
             AppUser user = CurrentUser;
-            user.city = city;
+            user.City = city;
+            user.SetCountryFromCity(user.City);
             await UserManager.UpdateAsync(user);
             return View(user);
         }
