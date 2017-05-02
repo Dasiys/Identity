@@ -7,7 +7,12 @@ using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace Domain.Model
 {
+    public enum Cities
+    {
+        LONDON,PARIS,CHICAGO
+    }
     public class AppUser:IdentityUser
     {
+        public Cities city { get; set; }
     }
 }

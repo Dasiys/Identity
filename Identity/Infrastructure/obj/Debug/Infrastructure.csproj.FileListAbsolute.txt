@@ -32,3 +32,4 @@ F:\project\Identity\Identity\Infrastructure\obj\Debug\Infrastructure.dll
 F:\project\Identity\Identity\Infrastructure\obj\Debug\Infrastructure.pdb
 F:\project\Identity\Identity\Infrastructure\obj\Debug\Infrastructure.Migrations.InitialCreate.resources
 F:\project\Identity\Identity\Infrastructure\obj\Debug\Infrastructure.csproj.GenerateResource.Cache
+F:\project\Identity\Identity\Infrastructure\obj\Debug\Infrastructure.Migrations.CityProperty.resources

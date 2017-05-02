@@ -1,0 +1,24 @@
+﻿@using Domain.Model
+@model AppUser
+@{
+    ViewBag.Title = "UserProps";
+}
+
+<h2>UserProps</h2>
+<div class="panel panel-primary">
+    <div class="panel panel-heading">Customer User Properties</div>
+    <table class="table table-striped">
+        <tr>
+            <th>City</th>
+            <td>@Model.city</td>
+        </tr>
+    </table>
+</div>
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        <label>City</label>
+        @Html.DropDownListFor(x=>x.city,new SelectList(Enum.GetNames(typeof(Cities))))
+    </div>
+    <button class="btn btn-primary" type="submit">Save</button>
+}
