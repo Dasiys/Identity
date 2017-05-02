@@ -10,7 +10,6 @@ namespace Infrastructure.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
-            ContextKey = "Infrastructure.Database.AppIdentityDbContext";
         }
 
         protected override void Seed(Infrastructure.Database.AppIdentityDbContext context)

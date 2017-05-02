@@ -13,6 +13,7 @@ using Domain.Create;
 
 namespace Identity.Controllers
 {
+    [Authorize(Roles = "Administrator")]
     public class RoleAdminController : Controller
     {
         // GET: RoleAdmin
