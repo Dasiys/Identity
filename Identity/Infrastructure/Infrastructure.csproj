@@ -85,8 +85,10 @@
     <Compile Include="Database\AppIdentityDbContext.cs" />
     <Compile Include="Manager\AppRoleManager.cs" />
     <Compile Include="Manager\AppUserManager.cs" />
+    <Compile Include="Manager\ClaimsRoles.cs" />
     <Compile Include="Manager\CustomPasswordValidator.cs" />
     <Compile Include="Manager\IdentityHelpers.cs" />
+    <Compile Include="Manager\LocationClaimsProvider.cs" />
     <Compile Include="Migrations\201705020638297_InitialCreate.cs" />
     <Compile Include="Migrations\201705020638297_InitialCreate.Designer.cs">
       <DependentUpon>201705020638297_InitialCreate.cs</DependentUpon>

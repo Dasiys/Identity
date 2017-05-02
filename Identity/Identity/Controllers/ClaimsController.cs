@@ -25,5 +25,10 @@ namespace Identity.Controllers
             }
 
         }
+        [Authorize(Roles ="DCStaff")]
+        public string OtherAction()
+        {
+            return "This is a protected Action";
+        }
     }
 }
