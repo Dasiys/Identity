@@ -8,7 +8,7 @@
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    <input type="hidden" value="@ViewBag.returnUrl"/>
+    <input type="hidden"  name="returnUrl" value="@ViewBag.returnUrl"/>
     <div class="form-group">
         <label>Name</label>
         @Html.TextBoxFor(x => x.Name,new { @class="form-control" })
@@ -18,4 +18,9 @@
         @Html.PasswordFor(x => x.Password, new { @class="form-control"})
     </div>
     <button type="submit" class="btn btn-primary" >Log In</button>
+}
+@using (Html.BeginForm("GoogleLogin","Account"))
+{
+    <input type="hidden" name="returnUrl" value="@ViewBag.returnUrl"/>
+    <button class="btn btn-primary" type="submit"> Log In Via Google</button>
 }

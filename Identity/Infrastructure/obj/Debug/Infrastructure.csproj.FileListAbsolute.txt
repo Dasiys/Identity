@@ -34,3 +34,5 @@ F:\project\Identity\Identity\Infrastructure\obj\Debug\Infrastructure.Migrations.
 F:\project\Identity\Identity\Infrastructure\obj\Debug\Infrastructure.csproj.GenerateResource.Cache
 F:\project\Identity\Identity\Infrastructure\obj\Debug\Infrastructure.Migrations.CityProperty.resources
 F:\project\Identity\Identity\Infrastructure\obj\Debug\Infrastructure.Migrations.CountryProperty.resources
+F:\project\Identity\Identity\Infrastructure\bin\Debug\Microsoft.Owin.Security.Google.dll
+F:\project\Identity\Identity\Infrastructure\bin\Debug\Microsoft.Owin.Security.Google.xml

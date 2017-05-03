@@ -102,3 +102,5 @@ F:\project\Identity\Identity\Identity\bin\zh-Hans\System.Web.WebPages.Razor.reso
 F:\project\Identity\Identity\Identity\obj\Debug\Identity.csprojResolveAssemblyReference.cache
 F:\project\Identity\Identity\Identity\obj\Debug\Identity.dll
 F:\project\Identity\Identity\Identity\obj\Debug\Identity.pdb
+F:\project\Identity\Identity\Identity\bin\Microsoft.Owin.Security.Google.dll
+F:\project\Identity\Identity\Identity\bin\Microsoft.Owin.Security.Google.xml

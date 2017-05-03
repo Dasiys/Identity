@@ -7,6 +7,8 @@ using Infrastructure.Manager;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin;
 using Owin;
+using Microsoft.Owin.Security.Google;
+using System.Configuration;
 
 namespace Identity.App_Start
 {
@@ -22,7 +24,12 @@ namespace Identity.App_Start
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
                 LoginPath = new PathString("/Account/Login")
             });
-
+            app.UseExternalSignInCookie(DefaultAuthenticationTypes.ExternalCookie);
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions
+            {
+                ClientId = ConfigurationManager.AppSettings["ClientId"],
+                ClientSecret = ConfigurationManager.AppSettings["ClientSecret"]
+            });
         }
     }
 }
