@@ -104,3 +104,9 @@ F:\project\Identity\Identity\Identity\obj\Debug\Identity.dll
 F:\project\Identity\Identity\Identity\obj\Debug\Identity.pdb
 F:\project\Identity\Identity\Identity\bin\Microsoft.Owin.Security.Google.dll
 F:\project\Identity\Identity\Identity\bin\Microsoft.Owin.Security.Google.xml
+F:\project\Identity\Identity\Identity\bin\System.Net.Http.Formatting.dll
+F:\project\Identity\Identity\Identity\bin\System.Web.Http.dll
+F:\project\Identity\Identity\Identity\bin\System.Web.Http.WebHost.dll
+F:\project\Identity\Identity\Identity\bin\System.Net.Http.Formatting.xml
+F:\project\Identity\Identity\Identity\bin\System.Web.Http.xml
+F:\project\Identity\Identity\Identity\bin\System.Web.Http.WebHost.xml
