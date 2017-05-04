@@ -17,19 +17,15 @@ namespace Identity.Controllers
             // 检查是否是 multipart/form-data 
             if (!Request.Content.IsMimeMultipartContent("form-data"))
                 throw new HttpResponseException(HttpStatusCode.UnsupportedMediaType);
-            //文件保存目录路径 
-            //string SaveTempPath = "~/SayPlaces/" + "/SayPic/SayPicTemp/";
-            //String dirTempPath = HttpContext.Current.Server.MapPath(SaveTempPath);
             // 设置上传目录 
             var provider = new MultipartFormDataStreamProvider(@"F:\\WebApi\\UpLoad");
-            //var queryp = Request.GetQueryNameValuePairs();//获得查询字符串的键值集合 
             var task = Request.Content.ReadAsMultipartAsync(provider).
                 ContinueWith<Hashtable>(o =>
                 {
                     Hashtable hash = new Hashtable();
                     hash["error"] = 1;
                     hash["errmsg"] = "上传出错";
-                    var file = provider.FileData[0];//provider.FormData 
+                    var file = provider.FileData[0]; 
                     string orfilename = file.Headers.ContentDisposition.FileName.TrimStart('"').TrimEnd('"');
                     FileInfo fileinfo = new FileInfo(file.LocalFileName);
                     //最大文件大小 

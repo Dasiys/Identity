@@ -22,7 +22,8 @@
 {
     <div class="form-group">
         <label>City</label>
-        @Html.DropDownListFor(x=>x.City,new SelectList(Enum.GetNames(typeof(Cities))))
+        @*@Html.DropDownListFor(x=>x.City,new SelectList(Enum.GetNames(typeof(Cities))))*@
+        @Html.EditorFor(m=>m.City)
     </div>
     <button class="btn btn-primary" type="submit">Save</button>
 }

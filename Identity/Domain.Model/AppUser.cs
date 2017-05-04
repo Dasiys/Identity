@@ -9,7 +9,7 @@ namespace Domain.Model
 {
     public enum Cities
     {
-        LONDON,PARIS,CHICAGO
+        CHICAGO,LONDON, PARIS
     }
 
     public enum Countries
