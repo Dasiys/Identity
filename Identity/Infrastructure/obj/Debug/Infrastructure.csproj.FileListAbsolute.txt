@@ -36,3 +36,4 @@ F:\project\Identity\Identity\Infrastructure\obj\Debug\Infrastructure.Migrations.
 F:\project\Identity\Identity\Infrastructure\obj\Debug\Infrastructure.Migrations.CountryProperty.resources
 F:\project\Identity\Identity\Infrastructure\bin\Debug\Microsoft.Owin.Security.Google.dll
 F:\project\Identity\Identity\Infrastructure\bin\Debug\Microsoft.Owin.Security.Google.xml
+F:\project\Identity\Identity\Infrastructure\obj\Debug\Infrastructure.Migrations.AddPermission.resources

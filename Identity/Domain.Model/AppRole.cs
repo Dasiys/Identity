@@ -12,5 +12,10 @@ namespace Domain.Model
         public AppRole():base(){}
 
         public AppRole(string name) : base(name) { }
+
+        /// <summary>
+        /// 设置或获取权限
+        /// </summary>
+        public ICollection<Permission> Permissions { set; get; }
     }
 }

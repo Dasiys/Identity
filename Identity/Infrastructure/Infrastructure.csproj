@@ -87,6 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\AppIdentityDbContext.cs" />
+    <Compile Include="Database\PermissionMap.cs" />
     <Compile Include="Manager\AppRoleManager.cs" />
     <Compile Include="Manager\AppUserManager.cs" />
     <Compile Include="Manager\ClaimsAccessAttribute.cs" />
@@ -105,6 +106,10 @@
     <Compile Include="Migrations\201705020739369_CountryProperty.cs" />
     <Compile Include="Migrations\201705020739369_CountryProperty.Designer.cs">
       <DependentUpon>201705020739369_CountryProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705150842019_AddPermission.cs" />
+    <Compile Include="Migrations\201705150842019_AddPermission.Designer.cs">
+      <DependentUpon>201705150842019_AddPermission.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -128,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705020739369_CountryProperty.resx">
       <DependentUpon>201705020739369_CountryProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705150842019_AddPermission.resx">
+      <DependentUpon>201705150842019_AddPermission.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

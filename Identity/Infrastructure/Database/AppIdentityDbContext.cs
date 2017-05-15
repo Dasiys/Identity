@@ -26,7 +26,15 @@ namespace Infrastructure.Database
             return new AppIdentityDbContext();
         }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Configurations.Add(new PermissionMap());
+            base.OnModelCreating(modelBuilder);
+        }
+
         public DbSet<Boy> Boy { set; get; }
+
+        public DbSet<Permission> Permissions { set; get; }
     }
 
     public class IdentityDbInit : NullDatabaseInitializer<AppIdentityDbContext>
