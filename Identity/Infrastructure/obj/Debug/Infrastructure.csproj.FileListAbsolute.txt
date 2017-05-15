@@ -37,3 +37,6 @@ F:\project\Identity\Identity\Infrastructure\obj\Debug\Infrastructure.Migrations.
 F:\project\Identity\Identity\Infrastructure\bin\Debug\Microsoft.Owin.Security.Google.dll
 F:\project\Identity\Identity\Infrastructure\bin\Debug\Microsoft.Owin.Security.Google.xml
 F:\project\Identity\Identity\Infrastructure\obj\Debug\Infrastructure.Migrations.AddPermission.resources
+F:\project\Identity\Identity\Infrastructure\bin\Debug\Domin.Create.dll
+F:\project\Identity\Identity\Infrastructure\bin\Debug\Domin.Create.pdb
+F:\project\Identity\Identity\Infrastructure\bin\Debug\Domin.Create.dll.config
