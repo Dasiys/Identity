@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Configuration;
 using Infrastructure.Database;
 using Infrastructure.Manager;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin;
-using Owin;
 using Microsoft.Owin.Security.Google;
-using System.Configuration;
+using Owin;
 
-namespace Identity.App_Start
+namespace Identity
 {
     public class IdentityConfig
     {

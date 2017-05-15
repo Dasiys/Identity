@@ -21,13 +21,7 @@ namespace Identity.Controllers
             return View(UserManager.Users);
         }
 
-        private AppUserManager UserManager
-        {
-            get
-            {
-                return HttpContext.GetOwinContext().GetUserManager<AppUserManager>();
-            }
-        }
+        private AppUserManager UserManager => HttpContext.GetOwinContext().GetUserManager<AppUserManager>();
 
         public ActionResult Create()
         {
