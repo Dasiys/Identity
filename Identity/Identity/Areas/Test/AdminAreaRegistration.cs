@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace Identity.Areas.Admin
+namespace Identity.Areas.Test
 {
     public class AdminAreaRegistration : AreaRegistration 
     {
@@ -16,8 +16,8 @@ namespace Identity.Areas.Admin
         {
             context.MapRoute(
                 "Admin_default",
-                "Admin/{controller}/{action}/{id}",
-                new { action = "Index", id = UrlParameter.Optional }
+                "Test/{controller}/{action}/{id}",
+                new { controller="Home",action = "Index", id = UrlParameter.Optional }
             );
         }
     }

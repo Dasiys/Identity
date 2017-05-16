@@ -5,14 +5,17 @@
     <div class="panel-heading">User Details</div>
     <table class="table table-striped">
         @{ foreach (string key in Model.Keys) {
-                <tr>
-                    <th>
-                        @key
-                    </th>
-                    <th>@Model[key]</th>
-                </tr>
-            }
+               <tr>
+                   <th>
+                       @key
+                   </th>
+                   <th>@Model[key]</th>
+               </tr>
+           }
         }
     </table>
 </div>
+@Html.ActionLink("权限", "Index", "Permission", null, new { @class = "btn btn-primary" })
+@Html.ActionLink("角色","Index","RoleAdmin", null, new { @class = "btn btn-primary" })
+@Html.ActionLink("用户","Index","Admin",null,new {@class= "btn btn-primary" })
 @Html.ActionLink("Sign out", "LogOut", "Account",null, new { @class="btn btn-primary"})

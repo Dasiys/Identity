@@ -16,6 +16,7 @@ namespace Identity.Controllers
     public class AdminController : Controller
     {
         // GET: Admin
+        [HttpGet]
         public ActionResult Index()
         {
             return View(UserManager.Users);
@@ -72,6 +73,7 @@ namespace Identity.Controllers
             return View("Error", new string[] { "User Not Found" });
         }
 
+        [HttpGet]
         public async Task<ActionResult> Edit(string id)
         {
             AppUser user = await UserManager.FindByIdAsync(id);
