@@ -26,7 +26,7 @@ namespace Domain.Model
         /// <summary>
         /// 设置或获取角色
         /// </summary>
-        public ICollection<AppRole> AppRoles { set; get; }
+        public virtual ICollection<AppRole> AppRoles { set; get; }
         
     }
 }

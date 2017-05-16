@@ -79,6 +79,7 @@
   <ItemGroup>
     <Compile Include="CreateModel.cs" />
     <Compile Include="PermissionDto.cs" />
+    <Compile Include="PermissionShowModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RoleEditModel.cs" />
   </ItemGroup>

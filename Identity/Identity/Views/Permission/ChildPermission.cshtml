@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Domain.Create.PermissionShowModel>
+<div>
+    @foreach (var permission in Model)
+    {
+        <ul>
+            <li>
+                <Label>@permission.Name</Label>
+                @Html.Partial("~/Views/Permission/ChildPermission.cshtml",permission.ChildPermissionShowModels)
+            </li>
+        </ul>
+    }
+</div>

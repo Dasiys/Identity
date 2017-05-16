@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Domain.Create.PermissionShowModel>
+@foreach (var permission in Model)
+{
+   string isChecked =permission.IsChecked?"checked":"";
+    <ul>
+        <li>
+            <input type="checkbox" name="PermissionIds" @isChecked  value="@permission.Id" />
+            <label>@permission.Name</label>
+            @Html.Partial("~/Views/RoleAdmin/AddPermissions.cshtml",permission.ChildPermissionShowModels)
+        </li>
+    </ul>
+}

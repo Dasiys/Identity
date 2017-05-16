@@ -1,0 +1,15 @@
+﻿@model Domain.Model.Permission
+@{
+    ViewBag.Title = "增加权限";
+}
+<div>
+    @using (Html.BeginForm())
+    {
+        @Html.LabelFor(m => m.Name, "名称：")
+        @Html.EditorFor(m => m.Name)
+        <hr/>
+        @Html.LabelFor(m=>m.ParentId,"父级菜单：")
+        @Html.DropDownList("ParentId", (IEnumerable<SelectListItem>) ViewBag.ParentPermissions)
+        <button type="submit">提交</button>
+    }
+</div>

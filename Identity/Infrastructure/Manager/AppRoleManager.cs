@@ -25,20 +25,16 @@ namespace Infrastructure.Manager
         /// <summary>
         /// 添加权限
         /// </summary>
-        /// <param name="roleId"></param>
-        /// <param name="perissions"></param>
-        public void AddRolePermission(string roleId,string perissions)
+        /// <param name="role"></param>
+        /// <param name="perissionIds"></param>
+        /// <param name="context"></param>
+        public void AddRolePermission(AppRole role, string[] perissionIds,AppIdentityDbContext context)
         {
-            var context=new IdentityDbContext();
-            var role = context.Set<AppRole>().SingleOrDefault(m => m.Id == roleId);
             if (role != null)
             {
                 role.Permissions.Clear();
-                role.Permissions = context.Set<Permission>().Where(m => perissions.Contains(m.Id.ToString())).ToList();
+                role.Permissions =  new PermissionManager(context).GetPermission(m => perissionIds.Contains(m.Id.ToString()));
             }
-            context.SaveChanges();
         }
-
-
     }
 }

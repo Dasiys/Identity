@@ -1,0 +1,8 @@
+﻿@model IEnumerable<Domain.Create.PermissionShowModel>
+@{
+    ViewBag.Title = "权限";
+}
+<h2>权限</h2>
+<div>
+    @Html.Partial("~/Views/Permission/ChildPermission.cshtml",Model)
+</div>

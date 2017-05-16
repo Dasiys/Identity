@@ -10,12 +10,15 @@ using System.ComponentModel.DataAnnotations;
 using Domain.Model;
 using System.Threading.Tasks;
 using Domain.Create;
+using Domin.Create;
+using Infrastructure.Database;
 
 namespace Identity.Controllers
 {
     [Authorize(Roles = "Administrator")]
     public class RoleAdminController : Controller
     {
+        private readonly PermissionManager _permissionManager=new PermissionManager();
         // GET: RoleAdmin
         public ActionResult Index()
         {
@@ -86,7 +89,8 @@ namespace Identity.Controllers
             {
                 Members = members,
                 NonMembers = nonMembers,
-                Role = role
+                Role = role,
+                Permission = _permissionManager.GetEditPermissions(role.Permissions?.ToList() )
             });
         }
 
@@ -112,6 +116,9 @@ namespace Identity.Controllers
                         return View("Error", result.Errors);
                     }
                 }
+                var role = await RoleManager.FindByNameAsync(model.RoleName);
+                RoleManager.AddRolePermission(role,model.PermissionIds,HttpContext.GetOwinContext().Get<AppIdentityDbContext>());
+                RoleManager.Update(role);
                 return RedirectToAction("Index");
             }
             return View("Errors", new string[] { "Role Not Found" });
@@ -132,5 +139,7 @@ namespace Identity.Controllers
                 return HttpContext.GetOwinContext().GetUserManager<AppRoleManager>();
             }
         }
+
+
     }
 }

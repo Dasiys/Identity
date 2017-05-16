@@ -16,6 +16,6 @@ namespace Domain.Model
         /// <summary>
         /// 设置或获取权限
         /// </summary>
-        public ICollection<Permission> Permissions { set; get; }
+        public virtual ICollection<Permission> Permissions { set; get; }
     }
 }

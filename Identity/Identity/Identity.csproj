@@ -253,12 +253,15 @@
     <Content Include="Views\Home\UserProps.cshtml" />
     <Content Include="Views\Claims\Index.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Cities.cshtml" />
+    <Content Include="Views\Permission\AddPermission.cshtml" />
+    <Content Include="Views\Permission\Index.cshtml" />
+    <Content Include="Views\Permission\ChildPermission.cshtml" />
+    <Content Include="Views\RoleAdmin\AddPermissions.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Permission\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
