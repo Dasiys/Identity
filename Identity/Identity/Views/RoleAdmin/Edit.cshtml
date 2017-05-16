@@ -37,6 +37,11 @@
             @if (Model.Members.Count() == 0)
             {
                 <tr><td colspan="2">No Users Are Members</td></tr>
+            }
+            else
+            {
+                <tr><td>User ID</td><td>Remove From Users</td></tr>
+
                 foreach (AppUser user in Model.Members)
                 {
                     <tr>
